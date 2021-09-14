@@ -1,5 +1,5 @@
 # para ejecutar la prueba se pone pytest en la consola
-def inc(x):
-    return x + 1
+from numeros import programa
+
 def test_answer():
-    assert inc(4) == 5
+    assert programa(3) == "tres"

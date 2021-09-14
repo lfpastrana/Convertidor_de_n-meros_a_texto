@@ -97,9 +97,10 @@ def nueve(convertir):
                 a =tres(convertir[0:3])+ " millones " + tres(convertir[3:6]) +" mil "+ tres(convertir[6:9])
                 return a
 
-while True:
+def programa(convertir):
+
     try:
-        convertir=input("Ingrese un número entero entre 0 y 1.000.000.000==>")
+        
         largo=len(convertir)
         if str(convertir) == " ":
             print("No se aceptan letras")
@@ -137,7 +138,7 @@ while True:
             if largo == 9:
                 x = nueve(convertir)
                 print(x)
-            break
+
     except:
         print("Solamente cargar números enteros entre 0 y 1.000.000.000")
         print("Gracias")
